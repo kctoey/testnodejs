@@ -9,10 +9,10 @@ const productRouter = express.Router();
 
 app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
-productRouter.router("/").get((req, res) => {
+productRouter.route("/").get((req, res) => {
   res.send("Welcome to shop");
 });
-productRouter.router("/").get((req, res) => {
+productRouter.route("/1").get((req, res) => {
   res.send("T-Shrit");
 });
 app.get("/products", productRouter);
