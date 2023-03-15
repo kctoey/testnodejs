@@ -9,6 +9,7 @@ const path = require("path");
 app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
 
+app.get("/products");
 app.get("/", (req, res) => {
   res.render("index", {
     username: "Lnwza55",
