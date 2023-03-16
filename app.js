@@ -9,6 +9,7 @@ const productRouter = express.Router();
 
 app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
+
 productRouter.route("/").get((req, res) => {
   res.send("Welcome to shop");
 });
@@ -16,7 +17,9 @@ productRouter.route("/").get((req, res) => {
 productRouter.route("/1").get((req, res) => {
   res.send("T-Shrit");
 });
+
 app.use("/products", productRouter);
+
 app.get("/", (req, res) => {
   res.render("index", {
     username: "Lnwza55",
