@@ -12,10 +12,11 @@ app.use(express.static(path.join(__dirname, "/public/")));
 productRouter.route("/").get((req, res) => {
   res.send("Welcome to shop");
 });
+
 productRouter.route("/1").get((req, res) => {
   res.send("T-Shrit");
 });
-app.get("/products", productRouter);
+app.use("/products", productRouter);
 app.get("/", (req, res) => {
   res.render("index", {
     username: "Lnwza55",
