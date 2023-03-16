@@ -11,7 +11,7 @@ app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 productRouter.route("/").get((req, res) => {
-  res.send("Welcome to shop");
+  res.send("products");
 });
 
 productRouter.route("/1").get((req, res) => {
