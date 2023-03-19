@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 const morgan = require("morgan");
 const path = require("path");
+const products = require("./data/products.jsons");
 const productRouter = express.Router();
 
 app.use(morgan("combined"));
@@ -12,28 +13,7 @@ app.use(express.static(path.join(__dirname, "/public/")));
 
 productRouter.route("/").get((req, res) => {
   res.render("products", {
-    products: [
-      {
-        productTitle: "เสื้อยืดสีดำ",
-        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
-        productPrice: "99",
-      },
-      {
-        productTitle: "เสื้อยืดสีขาว",
-        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
-        productPrice: "99",
-      },
-      {
-        productTitle: "เสื้อยืดสีแดง",
-        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
-        productPrice: "99",
-      },
-      {
-        productTitle: "เสื้อยืดสีเขียว",
-        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
-        productPrice: "99",
-      },
-    ],
+    products,
   });
 });
 
