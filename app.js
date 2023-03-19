@@ -11,7 +11,15 @@ app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 productRouter.route("/").get((req, res) => {
-  res.render("products");
+  res.render("products", {
+    products: [
+      {
+        productTitle: "เสื้อยืดสีดำ",
+        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
+        productPrice: "99",
+      },
+    ],
+  });
 });
 
 productRouter.route("/1").get((req, res) => {
