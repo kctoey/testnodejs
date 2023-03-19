@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 const morgan = require("morgan");
 const path = require("path");
-const products = require("./data/products.jsons");
+const products = require("./data/products.json");
 const productRouter = express.Router();
 
 app.use(morgan("combined"));
