@@ -18,6 +18,21 @@ productRouter.route("/").get((req, res) => {
         productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
         productPrice: "99",
       },
+      {
+        productTitle: "เสื้อยืดสีขาว",
+        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
+        productPrice: "99",
+      },
+      {
+        productTitle: "เสื้อยืดสีแดง",
+        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
+        productPrice: "99",
+      },
+      {
+        productTitle: "เสื้อยืดสีเขียว",
+        productDesc: "ผ้ายืด สีไม่ตก ใส่สบาย",
+        productPrice: "99",
+      },
     ],
   });
 });
