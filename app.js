@@ -1,3 +1,4 @@
+const express = require("express");
 const chalk = require("chalk");
 const debug = require("debug")("app");
 const app = express();
@@ -5,7 +6,6 @@ const port = 3000;
 const morgan = require("morgan");
 const path = require("path");
 
-const app = express();
 const PORT = process.env.PORT || 4000;
 const productsRouter = require("./src/router/productsRouter");
 app.use(morgan("combined"));
