@@ -12,7 +12,7 @@ app.use(morgan("combined"));
 app.use(express.static(path.join(__dirname, "/public/")));
 
 productRouter.route("/").get((req, res) => {
-  res.render("products", products);
+  res.render("products", { products });
 });
 
 productRouter.route("/:id").get((req, res) => {
