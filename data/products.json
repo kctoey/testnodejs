@@ -1,28 +1,26 @@
-{
-  "products": [
-    {
-      "id": 1,
-      "productTitle": "เสื้อยืดสีดำ",
-      "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
-      "productPrice": 99
-    },
-    {
-      "id": 2,
-      "productTitle": "เสื้อยืดสีขาว",
-      "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
-      "productPrice": 99
-    },
-    {
-      "id": 3,
-      "productTitle": "เสื้อยืดสีแดง",
-      "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
-      "productPrice": 99
-    },
-    {
-      "id": 4,
-      "productTitle": "เสื้อยืดสีเขียว",
-      "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
-      "productPrice": 99
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "productTitle": "เสื้อยืดสีดำ",
+    "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
+    "productPrice": 99
+  },
+  {
+    "id": 2,
+    "productTitle": "เสื้อยืดสีขาว",
+    "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
+    "productPrice": 99
+  },
+  {
+    "id": 3,
+    "productTitle": "เสื้อยืดสีแดง",
+    "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
+    "productPrice": 99
+  },
+  {
+    "id": 4,
+    "productTitle": "เสื้อยืดสีเขียว",
+    "productDesc": "ผ้ายืด สีไม่ตก ใส่สบาย",
+    "productPrice": 99
+  }
+]
