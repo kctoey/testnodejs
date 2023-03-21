@@ -6,7 +6,9 @@
     <div>
       <h1>Product page</h1>
       <% products.map((product)=>{ %>
-      <h4><a href="/products/<%=productid%>"><%=product.productTitle %></a></h4>
+      <h4>
+        <a href="/products/<%=product.id%>"><%=product.productTitle %></a>
+      </h4>
       <p><%=product.productDesc %></p>
       <p>ราคา<%=product.productPrice %></p>
       <% })%>
